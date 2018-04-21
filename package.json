@@ -1,0 +1,33 @@
+{
+  "name": "restaurant_app",
+  "version": "0.0.1",
+  "description": "An app for small to medium-sized restaurants to have a common ordering interface.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonmorazav/restaurantonlineordering.git"
+  },
+  "keywords": [
+    "restaurant",
+    "paypal",
+    "ordering"
+  ],
+  "author": "Nick Shwaery Nick Calaway Jonathan Morales David Llaca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonmorazav/restaurantonlineordering/issues"
+  },
+  "homepage": "https://github.com/jonmorazav/restaurantonlineordering#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.15"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.3"
+  }
+}
