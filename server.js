@@ -1,4 +1,5 @@
-const server = require('express')(),
+const express = require('express'),
+  server = express(),
   mongoose = require('mongoose'),
   session = require('express-session'),
   bodyParser = require('body-parser'),
@@ -35,6 +36,6 @@ server.use(bodyParser.json());
 server.use(routes);
 
 
-server.listen(PORT, () => {
+server.listen(port, () => {
   console.log(`Listening on port: ${port}`);
 });
