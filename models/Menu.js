@@ -27,7 +27,7 @@ const MenuSchema = new Schema({
 
   // Flags
   flags: {
-    type: String,
+    type: Array,
     enum: ['gluten free', 'fat free', 'vegetarian', 'vegan', 'spicy', 'specialty']
   }
 
