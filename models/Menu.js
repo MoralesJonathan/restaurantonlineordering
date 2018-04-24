@@ -27,9 +27,8 @@ const MenuSchema = new Schema({
 
   // Flags
   flags: {
-    type: Array,
-    enum: ['gluten free', 'fat free', 'vegetarian', 'vegan', 'spicy', 'specialty']
-  }
+    type: Array
+  },
 
   // Pricing
   price: {
@@ -50,7 +49,7 @@ const MenuSchema = new Schema({
     trim: true,
     required: true,
     enum: ['protein', 'topping', 'bread']
-  }
+  },
 
   // Special
   toRemove: {
@@ -66,3 +65,5 @@ const MenuSchema = new Schema({
     }
   }
 })
+
+module.exports = mongoose.model('Menu', MenuSchema);

@@ -35,6 +35,11 @@ server.use(bodyParser.json());
 
 server.use(routes);
 
+mongoose.connect(keys.mongoUrl);
+mongoose.Promise = Promise;
+mongoose.connection.on('error', err => {
+  console.log(err);
+});
 
 server.listen(port, () => {
   console.log(`Listening on port: ${port}`);

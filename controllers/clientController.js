@@ -1,10 +1,10 @@
 'use strict'
 
-const Menu = require('./models/Menu');
+const Menu = require('../models/Menu');
 
 const CRUD = {
   findAllItems: function(req, res) {
-    return Menu.findAll().then(items => res.json(items));
+    return Menu.find().then(items => res.json(items));
   },
 
   findOneItem: function(req, res) {
